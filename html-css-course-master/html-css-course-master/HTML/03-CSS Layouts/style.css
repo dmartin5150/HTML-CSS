@@ -1,6 +1,7 @@
 * {
-    margin:0;
-    padding:0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -10,37 +11,36 @@ body {
 }
 
 .container {
-    width:800px;
-    margin: 0 auto;
-
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .main-header {
   background-color: #f7f7f7;
-  padding:20px 40px;
-  margin-bottom:60px;
-  height:80px;
-
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
 }
 
 article {
-    margin-bottom:60px;
+  margin-bottom: 60px;
 }
 
 nav {
-    font-size:18px;
+  font-size: 18px;
 }
 
 .post-header {
-    margin-bottom:40px;
+  margin-bottom: 40px;
 }
 
 aside {
-    padding: 50px 0;
+  padding: 50px 40px;
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  width:500px;
+
+
 }
 
 h1,
@@ -57,32 +57,34 @@ h1 {
 
 h2 {
   font-size: 40px;
-  margin-bottom:30px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
-  margin-bottom:20px;
-  margin-top:40px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 20px;
+
 }
 
 p {
   font-size: 22px;
   line-height: 1.5;
-  margin-bottom:15px;
+  margin-bottom: 15px;
 }
 
-ol,ul {
-    margin-left:50px;
-    margin-bottom:20px;
+ol,
+ul {
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
-
 
 li {
   font-size: 20px;
@@ -90,7 +92,7 @@ li {
 }
 
 li:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 /* footer p {
@@ -117,6 +119,7 @@ li:last-child {
 
 .related {
   list-style: none;
+  margin-left:0;
 }
 
 /* .first-li {
@@ -152,57 +155,98 @@ a:active {
   font-style: italic;
 }
 
-
 nav a:link,
 nav a:visited {
-    margin-right:30px;
-    margin-top: 10px;
-    display: inline-block;
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
 }
 
 nav a:link:last-child,
 nav a:visited:last-child {
-    margin-right:0;
+  margin-right: 0;
 }
 
-
 .post-img {
-    width:100%;
-    height:auto;
+  width: 100%;
+  height: auto;
 }
 
 button {
-    font-size:22px;
-    padding:20px;
-    cursor: pointer;
-    position:absolute;
-    bottom:50px;
-    right:50px;
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
 }
 
 h1::first-letter {
-    font-style:normal;
-    margin-right:5px;
+  font-style: normal;
+  margin-right: 5px;
 }
 
 h2 {
-    position:relative;
+  position: relative;
 }
 
 h2::after {
-    content:"TOP";
-    background-color: #ffe70e;
-    color: #444;
-    font-size: 16px;
-    font-weight: bold;
-    display:inline-block;
-    padding: 5px 10px;
-    position:absolute;
-    top:-10px;
-    right:-25px;
-
+  content: "TOP";
+  background-color: #ffe70e;
+  color: #444;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
 }
 
 /* body {
     background-color: blue;
 } */
+/* floats */
+
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.author {
+  padding-top: 10px;
+  float: left;
+  margin-left: 20px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+article {
+  width: 825px;
+  float: left;
+}
+
+aside {
+  width: 300px;
+  float: right;
+}
+
+footer {
+  clear: both;
+}
