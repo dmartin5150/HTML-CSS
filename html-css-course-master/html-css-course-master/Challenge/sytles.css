@@ -7,40 +7,44 @@
   body {
     font-family: sans-serif;
     line-height:1.5;
+    padding:1px;
   }
   
   .container {
     width:825px;
+    padding:1px;
     margin:40px auto;
   
   }
   
   article {
-      border: 5px solid black;
+      border: 6px solid black;
         position:relative;
       
   }
 
 
+  .add-container {
+    display:flex;
+    gap:15px;
+    align-items: center;
+    padding:0;
+    margin:0;
+  }
 
   img {
-    float:left;
     margin-bottom: 0;
+    align-self:flex-end;
   }
 
 .pricing-container {
-  width:240px;
-  float:left;
-  margin-left:40px;
-  margin-top:10px;
-  position:relative;
+
+  /* position:relative; */
+  flex:1;
 }
 
 .details-container {
-  width:240px;
-  margin-top:14px;
-  float:right;
-  margin-right:20px;
+  flex:1;
 }
   
   .sale-tag {
@@ -96,12 +100,15 @@
   p {
     margin-bottom: 20px;
   }
+
+  .colors {
+    display:flex;
+    gap:5px;
+  }
   
   .color {
-    display:inline-block;
     height:20px;
     width:20px;
-    margin-right:5px;
   }
   
   .black {
