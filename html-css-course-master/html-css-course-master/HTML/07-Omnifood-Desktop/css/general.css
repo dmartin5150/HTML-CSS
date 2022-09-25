@@ -24,7 +24,7 @@ LETTER SPACING:
 --Primary color:  #e67e22
 
 --Tints:#fdf2e9,#fae5d3
---Shades:#cf711f
+--Shades: #45260a#cf711f #eb984e
 --Accents:
 --Greys
 #6F6F6F
@@ -32,7 +32,7 @@ LETTER SPACING:
 #333
 
 #5 SHADOWS
-
+ box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 
 #6 BORDER-RADIUS
 default: 9px;
@@ -103,6 +103,7 @@ SPACING SYSTEM (px)
     letter-spacing: 0.75px;
   }
   
+  .btn,
   .btn:link,
   .btn:visited {
     display: inline-block;
@@ -111,22 +112,38 @@ SPACING SYSTEM (px)
     padding: 1.6rem 3.2rem;
     border-radius: 9px;
     text-decoration: none;
+    border:none;
+    cursor: pointer;
+    font-family: inherit;
   
     /* Put transition on original state */
     transition: all 0.3s;
   }
-  
+ 
   .btn--full:link,
   .btn--full:visited {
     background-color: #e67e22;
     color: #fff;
   }
-  
+
   .btn--full:hover,
   .btn--full:active {
     background-color: #cf711f;
   }
   
+  .btn--form {
+    background-color: #45260a;
+    color:#fdf2e9;
+    align-self: end;
+    padding:1.2rem;
+  }
+
+  .btn--form:hover,
+  .btn--form:active {
+    color:#555;
+    background-color: #fff;
+  }
+ 
   .btn--outline:link,
   .btn--outline:visited {
     background-color: #fff;
@@ -200,7 +217,7 @@ SPACING SYSTEM (px)
   }
 
   .margin-bottom-md {
-    margin-bottom: 4.8rem;
+    margin-bottom: 4.8rem !important;
   }
 
   .center-text{
@@ -226,6 +243,13 @@ SPACING SYSTEM (px)
     width: 3rem;
     height: 3rem;
     color: #e67e22;
+  }
+
+  *:focus {
+    outline:none;
+    /* outline: 4px dotted #e67e22;
+    offset:8px; */
+    box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
   }
 
   strong {
