@@ -54,6 +54,8 @@ SPACING SYSTEM (px)
     /* font-size:10px; */
     font-size: 62.5%;
     overflow-x: hidden;
+    /* does not work on safari/edge */
+    /* scroll-behavior: smooth; */
   }
   
   body {
