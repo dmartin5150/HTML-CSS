@@ -76,6 +76,7 @@ function checkFlexGap() {
   flex.style.flexDirection = "column";
   flex.style.rowGap = "1px";
 
+
   flex.appendChild(document.createElement("div"));
   flex.appendChild(document.createElement("div"));
 
